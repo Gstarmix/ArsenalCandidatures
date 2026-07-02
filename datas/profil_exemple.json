@@ -1,0 +1,44 @@
+{
+  "_AVERTISSEMENT": "Fichier d'EXEMPLE. Copie-le en datas/profil_gaylord.json puis remplis-le avec TES informations réelles et vérifiables. profil_gaylord.json n'est pas versionné (données personnelles). N'inscris jamais une expérience ou un diplôme que tu n'as pas.",
+  "identite": {
+    "prenom": "Prénom",
+    "nom": "NOM",
+    "age": 0,
+    "ville": "Ville (00)",
+    "telephone": "00 00 00 00 00",
+    "email": "prenom.nom@example.com",
+    "email_secondaire": "",
+    "linkedin": "",
+    "permis": "",
+    "mobilite": "Zone géographique acceptée ; moyens de déplacement"
+  },
+  "disponibilite": "Ex. : disponible immédiatement, sur toute la période estivale",
+  "accroche_par_defaut": "Une phrase d'accroche par défaut, utilisée si l'offre est peu précise.",
+  "formations": [
+    {
+      "intitule": "Intitulé du diplôme ou de la formation",
+      "etablissement": "Établissement",
+      "periode": "20XX - 20XX",
+      "details": "Description courte (contenu, mention, statut)."
+    }
+  ],
+  "experiences": [
+    {
+      "poste": "Intitulé du poste",
+      "structure": "Employeur",
+      "periode": "20XX - 20XX",
+      "details": "Description concrète des missions réalisées.",
+      "type": "emploi"
+    }
+  ],
+  "competences": {
+    "savoir_faire_operationnels": ["Compétence 1", "Compétence 2"],
+    "informatique": ["Compétence 1"],
+    "manuelles": ["Compétence 1"]
+  },
+  "qualites": ["Qualité 1", "Qualité 2", "Qualité 3"],
+  "langues": [
+    { "langue": "Français", "niveau": "Langue maternelle" }
+  ],
+  "centres_interet": ["Centre d'intérêt 1"]
+}

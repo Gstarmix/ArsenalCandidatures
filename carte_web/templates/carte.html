@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Carte candidatures - Rennes</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="/static/carte.css">
+</head>
+<body>
+  <header id="topbar">
+    <div class="title">Candidatures <span class="ville">Rennes</span></div>
+    <div class="actions">
+      <button id="btn-near" title="Trouver le plus proche">📍 Près de moi</button>
+      <button id="btn-sim" title="Simuler ma position (poser un point sur la carte)">📌 Simuler</button>
+      <button id="btn-filters" title="Filtres">⚙️ Filtres</button>
+      <button id="btn-list" title="Liste">☰ Liste</button>
+    </div>
+  </header>
+
+  <div id="map"></div>
+
+  <section id="filters" class="sheet hidden">
+    <div class="sheet-head">
+      <strong>Filtres</strong>
+      <button class="close" data-close="filters">✕</button>
+    </div>
+    <div class="sheet-body">
+      <label class="search">🔎
+        <input type="search" id="f-text" placeholder="Enseigne, poste, rue...">
+      </label>
+
+      <div class="group">
+        <div class="group-title">Date d'ajout</div>
+        <div id="f-dates" class="chips"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Catégorie</div>
+        <div id="f-cats" class="chips"></div>
+      </div>
+
+      <div class="group">
+        <div class="group-title">Statut</div>
+        <div id="f-statuts" class="chips"></div>
+      </div>
+
+      <div class="group-actions">
+        <button id="f-reset">Tout réinitialiser</button>
+        <button id="f-apply" class="primary">Voir (<span id="f-count">0</span>)</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="listpanel" class="sheet hidden">
+    <div class="sheet-head">
+      <strong>Lieux <span id="list-count"></span></strong>
+      <button class="close" data-close="listpanel">✕</button>
+    </div>
+    <div class="sheet-body">
+      <label class="search">🔎
+        <input type="search" id="l-text" placeholder="Filtrer : enseigne, poste, rue, note...">
+      </label>
+      <div id="list-items"></div>
+      <div id="sansgeo-block">
+        <div class="group-title">Sans adresse précise (non placés sur la carte)</div>
+        <div id="sansgeo-items"></div>
+      </div>
+      <div id="traites-block">
+        <div class="group-title">Traités <span id="traites-count"></span> (retirés de la carte)</div>
+        <div id="traites-items"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="simpanel" class="sheet hidden">
+    <div class="sheet-head">
+      <strong>Position simulée</strong>
+      <button class="close" data-close="simpanel">✕</button>
+    </div>
+    <div class="sheet-body">
+      <button id="sim-map" class="sim-bigbtn">📍 Toucher la carte pour poser le point</button>
+      <button id="sim-clear" class="sim-bigbtn danger hidden">❌ Retirer la position simulée</button>
+      <div class="group">
+        <div class="group-title">🚇 Métro ligne A</div>
+        <div id="sim-ligneA" class="chips"></div>
+      </div>
+      <div class="group">
+        <div class="group-title">🚇 Métro ligne B</div>
+        <div id="sim-ligneB" class="chips"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="statusbar">
+    <span id="status-text">Chargement…</span>
+    <button id="btn-refresh" title="Régénérer les données">⟳ Mettre à jour</button>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="/static/carte.js"></script>
+</body>
+</html>

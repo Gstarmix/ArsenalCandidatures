@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{parskip}
+\setmainfont{Carlito}[Ligatures=TeX, BoldFont={Carlito Bold},
+  ItalicFont={Carlito Italic}, BoldItalicFont={Carlito Bold Italic}]
+\pagestyle{empty}
+\setlength{\parskip}{0.9em}
+\begin{document}
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+  \textbf{<<<NOM>>>}\par
+  <<<COORD>>>
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  \raggedleft
+  <<<ENTREPRISE>>>\par
+  <<<LIEU>>>
+\end{minipage}
+\vspace{1.2em}
+\noindent <<<VILLE_DATE>>>
+\vspace{0.6em}
+\noindent\textbf{Objet : <<<OBJET>>>}
+\vspace{0.6em}
+\noindent Madame, Monsieur,
+<<<CORPS>>>
+\noindent Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations
+distinguées.
+\vspace{1.6em}
+\noindent\hfill <<<NOM>>>
+\end{document}

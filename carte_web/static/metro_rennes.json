@@ -1,0 +1,228 @@
+[
+  {
+    "nom": "Anatole France",
+    "lat": 48.118148,
+    "lon": -1.687588,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Charles de Gaulle",
+    "lat": 48.105481,
+    "lon": -1.676843,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Clemenceau",
+    "lat": 48.093495,
+    "lon": -1.674401,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Gares",
+    "lat": 48.104233,
+    "lon": -1.672088,
+    "lignes": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "nom": "Henri Fréville",
+    "lat": 48.087675,
+    "lon": -1.674798,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Italie",
+    "lat": 48.086579,
+    "lon": -1.66792,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "J.F. Kennedy",
+    "lat": 48.121313,
+    "lon": -1.711275,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Jacques Cartier",
+    "lat": 48.097551,
+    "lon": -1.675427,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "La Poterie",
+    "lat": 48.087508,
+    "lon": -1.644574,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Le Blosne",
+    "lat": 48.087745,
+    "lon": -1.654281,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Pontchaillou",
+    "lat": 48.121571,
+    "lon": -1.693402,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "République",
+    "lat": 48.109758,
+    "lon": -1.679161,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Sainte-Anne",
+    "lat": 48.1147,
+    "lon": -1.679966,
+    "lignes": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "nom": "Triangle",
+    "lat": 48.08645,
+    "lon": -1.660357,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Villejean - Université",
+    "lat": 48.121254,
+    "lon": -1.703921,
+    "lignes": [
+      "A"
+    ]
+  },
+  {
+    "nom": "Atalante",
+    "lat": 48.127148,
+    "lon": -1.628117,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Beaulieu - Université",
+    "lat": 48.122138,
+    "lon": -1.639144,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Cesson - Viasilva",
+    "lat": 48.131502,
+    "lon": -1.620074,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Cleunay",
+    "lat": 48.100935,
+    "lon": -1.706437,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Colombier",
+    "lat": 48.105937,
+    "lon": -1.682074,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Gros-Chêne",
+    "lat": 48.125186,
+    "lon": -1.664448,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Joliot-Curie - Chateaubriand",
+    "lat": 48.12406,
+    "lon": -1.651394,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Jules Ferry",
+    "lat": 48.118687,
+    "lon": -1.670932,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "La Courrouze",
+    "lat": 48.096412,
+    "lon": -1.698277,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Les Gayeulles",
+    "lat": 48.129439,
+    "lon": -1.657157,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Mabilais",
+    "lat": 48.105089,
+    "lon": -1.692809,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Saint-Germain",
+    "lat": 48.110519,
+    "lon": -1.676119,
+    "lignes": [
+      "B"
+    ]
+  },
+  {
+    "nom": "Saint-Jacques - Gaîté",
+    "lat": 48.092007,
+    "lon": -1.703686,
+    "lignes": [
+      "B"
+    ]
+  }
+]

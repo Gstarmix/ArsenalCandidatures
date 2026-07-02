@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=0pt]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{calc}
+\usepackage{enumitem}
+\usepackage{eso-pic}
+\usepackage{hyperref}
+\setmainfont{Carlito}[Ligatures=TeX, BoldFont={Carlito Bold},
+  ItalicFont={Carlito Italic}, BoldItalicFont={Carlito Bold Italic}]
+\definecolor{sidebarbg}{HTML}{2C3E50}
+\definecolor{accent}{HTML}{3498DB}
+\definecolor{accentlight}{HTML}{5DADE2}
+\definecolor{maintext}{HTML}{2C3E50}
+\definecolor{mutedgray}{HTML}{7F8C8D}
+\hypersetup{colorlinks=true, urlcolor=accentlight, linkcolor=accentlight}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\topskip}{0pt}
+\pagestyle{empty}
+\newlength{\sidebarwidth}\setlength{\sidebarwidth}{6cm}
+\newlength{\mainwidth}\setlength{\mainwidth}{\paperwidth-\sidebarwidth}
+\AddToShipoutPictureBG{
+  \AtPageUpperLeft{
+    \color{sidebarbg}\rule[-\paperheight]{\sidebarwidth}{\paperheight}}}
+\newcommand{\sidebartitle}[1]{
+  \par\vspace{1.05em}{\color{accentlight}\large\bfseries #1}\par
+  {\color{accentlight}\rule{\linewidth}{0.4pt}}\par\vspace{0.5em}}
+\newcommand{\maintitle}[1]{
+  \par\vspace{1.15em}{\color{maintext}\large\bfseries\MakeUppercase{#1}}\par
+  {\color{accent}\rule{\linewidth}{1pt}}\par\vspace{0.55em}}
+\newcommand{\cventry}[4]{
+  \begin{minipage}[t]{\linewidth}
+    \textbf{\color{maintext} #1}\hfill{\color{mutedgray}\small #2}\par
+    {\itshape\color{accent}\small #3}\par\vspace{0.2em}
+    {\small #4}
+  \end{minipage}\par\vspace{0.95em}}
+\begin{document}
+\noindent
+\begin{minipage}[t][\paperheight][t]{\sidebarwidth}
+  \color{white}\vspace*{0.6cm}
+  \begin{center}<<<PHOTO>>>\end{center}
+  \vspace{0.35cm}
+  \begin{center}
+  \begin{minipage}{\sidebarwidth-1cm}\centering
+    {\Large\bfseries\color{white} <<<NOM>>>}\par\vspace{0.2em}
+    {\small\color{accentlight} <<<TITRE>>>}\par\vspace{0.3em}
+    {\scriptsize\color{white} <<<DISPO>>>}
+  \end{minipage}
+  \end{center}
+  \vspace{0.25cm}
+  \hspace{0.5cm}\begin{minipage}{\sidebarwidth-1cm}\color{white}\raggedright
+    \sidebartitle{Contact}
+    {\small <<<CONTACT>>>}
+    \sidebartitle{Compétences}
+    {\small <<<COMPETENCES>>>}
+    \sidebartitle{Atouts}
+    {\small <<<QUALITES>>>}
+    \sidebartitle{Langues}
+    {\small <<<LANGUES>>>}
+  \end{minipage}
+\end{minipage}
+\begin{minipage}[t][\paperheight][t]{\mainwidth}
+  \color{maintext}\vspace*{0.7cm}
+  \hspace{0.7cm}\begin{minipage}[t]{\mainwidth-1.4cm}
+    \maintitle{Profil}
+    {\small <<<ACCROCHE>>>}\par
+    \maintitle{Expériences}
+    <<<EXPERIENCES>>>
+    \maintitle{Formation}
+    <<<FORMATIONS>>>
+  \end{minipage}
+\end{minipage}
+\end{document}

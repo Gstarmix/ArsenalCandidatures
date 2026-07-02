@@ -1,0 +1,23 @@
+from pathlib import Path
+ROOT = Path(__file__).resolve().parent.parent
+INBOX = ROOT / "00_inbox_json"
+OFFRES = ROOT / "01_offres"
+CV_OUT = ROOT / "02_cv_generes"
+LETTRES_OUT = ROOT / "03_lettres"
+ENVOYES = ROOT / "04_envoyes"
+DATAS = ROOT / "datas"
+TEMPLATES = ROOT / "templates"
+LOGS = ROOT / "_logs"
+ARCHIVES = ROOT / "_archives"
+PROFIL_PATH = DATAS / "profil_gaylord.json"
+SUIVI_PATH = DATAS / "suivi_candidatures.json"
+PHOTO_PATH = DATAS / "photo.png"
+OFFRES_STORE = DATAS / "offres.json"
+DASHBOARD_PATH = LOGS / "tableau_de_bord.md"
+CV_TEMPLATE = TEMPLATES / "cv_template.tex"
+LETTRE_TEMPLATE = TEMPLATES / "lettre_template.tex"
+DOWNLOADS_INBOX = Path.home() / "Downloads" / "Arsenal_Candidatures_inbox"
+RELANCE_JOURS = 7
+SANS_REPONSE_JOURS = 21
+CLAUDE_TIMEOUT = 600
+XELATEX = "xelatex"

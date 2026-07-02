@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 290px; margin: 0; padding: 16px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #2C3E50; color: #ECF0F1;
+    }
+    h1 { font-size: 15px; margin: 0 0 4px; }
+    p.sub { font-size: 11px; color: #95A5A6; margin: 0 0 14px; }
+    button {
+      width: 100%; padding: 11px; font-size: 14px; font-weight: 600;
+      border: none; border-radius: 6px; cursor: pointer;
+      background: #3498DB; color: #fff;
+    }
+    button:hover { background: #2980B9; }
+    button:disabled { background: #7F8C8D; cursor: default; }
+    #status {
+      margin-top: 12px; font-size: 12px; line-height: 1.4;
+      padding: 9px; border-radius: 6px; background: #34495E;
+      display: none; white-space: pre-wrap;
+    }
+    #status.ok { background: #1E8449; display: block; }
+    #status.err { background: #922B21; display: block; }
+    #status.info { background: #34495E; display: block; }
+  </style>
+</head>
+<body>
+  <h1>Arsenal Candidatures</h1>
+  <p class="sub">Capture l'offre d'emploi de l'onglet actif.</p>
+  <button id="capture">Capturer cette offre</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
